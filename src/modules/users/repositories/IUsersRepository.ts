@@ -1,8 +1,17 @@
 import { User } from "../model/User";
 
 interface ICreateUserDTO {
+  id?: string;
+
   name: string;
+
+  admin?: boolean;
+
   email: string;
+
+  created_at?: Date;
+
+  updated_at?: Date;
 }
 
 interface IUsersRepository {
